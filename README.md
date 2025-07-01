@@ -159,8 +159,25 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 
 ### 🚀 一键解决方案
 
+<details open>
+<summary><b>Global Users</b></summary>
 
 
+**Linux**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash 
+```
+
+> **Note for Linux users:** The script attempts to find your Cursor installation by checking common paths (`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`), using the `which cursor` command, and searching within `/usr`, `/opt`, and `$HOME/.local`. If Cursor is installed elsewhere or not found via these methods, the script may fail. Ensure Cursor is accessible via one of these standard locations or methods.
+
+**Windows**
+
+```powershell
+irm https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
+```
+
+</details>
 
 
 #### Windows 安装特性:
@@ -174,181 +191,3 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 
 1. ✨ 自动安装工具
 2. 🔄 立即重置 Cursor 试用期
-
-### 📦 手动安装
-
-> 从 [releases](https://github.com/yuaotian/go-cursor-help/releases/latest) 下载适合您系统的文件
-
-<details>
-<summary>Windows 安装包</summary>
-
-- 64 位: `cursor-id-modifier_windows_x64.exe`
-- 32 位: `cursor-id-modifier_windows_x86.exe`
-</details>
-
-<details>
-<summary>macOS 安装包</summary>
-
-- Intel: `cursor-id-modifier_darwin_x64_intel`
-- M1/M2: `cursor-id-modifier_darwin_arm64_apple_silicon`
-</details>
-
-<details>
-<summary>Linux 安装包</summary>
-
-- 64 位: `cursor-id-modifier_linux_x64`
-- 32 位: `cursor-id-modifier_linux_x86`
-- ARM64: `cursor-id-modifier_linux_arm64`
-</details>
-
-### 🔧 技术细节
-
-<details>
-<summary><b>注册表修改说明</b></summary>
-
-> ⚠️ **重要提示：本工具会修改系统注册表**
-
-#### 修改内容
-- 路径：`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-- 项目：`MachineGuid`
-
-#### 潜在影响
-修改此注册表项可能会影响：
-- Windows 系统对设备的唯一标识
-- 某些软件的设备识别和授权状态
-- 基于硬件标识的系统功能
-
-#### 安全措施
-1. 自动备份
-   - 每次修改前会自动备份原始值
-   - 备份保存在：`%APPDATA%\Cursor\User\globalStorage\backups`
-   - 备份文件格式：`MachineGuid.backup_YYYYMMDD_HHMMSS`
-
-2. 手动恢复方法
-   - 打开注册表编辑器（regedit）
-   - 定位到：`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-   - 右键点击 `MachineGuid`
-   - 选择"修改"
-   - 粘贴备份文件中的值
-
-#### 注意事项
-- 建议在修改前先确认备份文件的存在
-- 如遇问题可通过备份文件恢复原始值
-- 必须以管理员权限运行才能修改注册表
-</details>
-
-<details>
-<summary><b>配置文件</b></summary>
-
-程序修改 Cursor 的`storage.json`配置文件，位于：
-
-- Windows: `%APPDATA%\Cursor\User\globalStorage\`
-- macOS: `~/Library/Application Support/Cursor/User/globalStorage/`
-- Linux: `~/.config/Cursor/User/globalStorage/`
-</details>
-
-<details>
-<summary><b>修改字段</b></summary>
-
-工具会生成新的唯一标识符：
-
-- `telemetry.machineId`
-- `telemetry.macMachineId`
-- `telemetry.devDeviceId`
-- `telemetry.sqmId`
-</details>
-
-<details>
-<summary><b>手动禁用自动更新</b></summary>
-
-Windows 用户可以手动禁用自动更新功能：
-
-1. 关闭所有 Cursor 进程
-2. 删除目录：`C:\Users\用户名\AppData\Local\cursor-updater`
-3. 创建同名文件：`cursor-updater`（不带扩展名）
-
-Linux用户可以尝试在系统中找到类似的`cursor-updater`目录进行相同操作。
-
-MacOS用户按照以下步骤操作：
-
-```bash
-# 注意：经测试，此方法仅适用于0.45.11及以下版本，不支持0.46.*版本
-# 关闭所有 Cursor 进程
-pkill -f "Cursor"
-
-# 备份app-update.yml并创建空的只读文件代替原文件
-cd /Applications/Cursor.app/Contents/Resources
-mv app-update.yml app-update.yml.bak
-touch app-update.yml
-chmod 444 app-update.yml
-
-# 打开Cursor设置，将更新模式设置为"无"，该步骤必须执行，否则Cursor依然会自动检查更新
-# 步骤：Settings -> Application -> Update, 将Mode设置为none
-
-# 注意: cursor-updater修改方法可能已失效。但为了以防万一，还是删除更新目录并创建阻止文件
-rm -rf ~/Library/Application\ Support/Caches/cursor-updater
-touch ~/Library/Application\ Support/Caches/cursor-updater
-```
-</details>
-
-<details>
-<summary><b>安全特性</b></summary>
-
-- ✅ 安全的进程终止
-- ✅ 原子文件操作
-- ✅ 错误处理和恢复
-</details>
-
-<details>
-<summary><b>重置 Cursor 免费试用</b></summary>
-
-### 使用 `cursor_free_trial_reset.sh` 脚本
-
-#### macOS
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh -o ./cursor_free_trial_reset.sh && sudo bash ./cursor_free_trial_reset.sh && rm ./cursor_free_trial_reset.sh
-```
-
-#### Linux
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh | sudo bash
-```
-
-#### Windows
-
-```powershell
-irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh | iex
-```
-
-</details>
-
-
-### 📚 推荐阅读
-
-- [Cursor 异常问题收集和解决方案](https://mp.weixin.qq.com/s/pnJrH7Ifx4WZvseeP1fcEA)
-- [AI 通用开发助手提示词指南](https://mp.weixin.qq.com/s/PRPz-qVkFJSgkuEKkTdzwg)
-
----
-
-
-
-## 📄 许可证
-
-<details>
-<summary><b>MIT 许可证</b></summary>
-
-Copyright (c) 2024
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-</details>
