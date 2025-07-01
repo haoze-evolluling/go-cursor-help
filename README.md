@@ -127,35 +127,6 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 
 > 注意：随着Cursor调整资源分配策略，这些访问模式可能会发生变化。
 
-### 🚀 系统支持
-
-<table>
-<tr>
-<td>
-
-**Windows** ✅
-
-- x64 & x86
-
-</td>
-<td>
-
-**macOS** ✅
-
-- Intel & M-series
-
-</td>
-<td>
-
-**Linux** ✅
-
-- x64 & ARM64
-
-</td>
-</tr>
-</table>
-
-
 
 ### 🚀 一键解决方案
 
