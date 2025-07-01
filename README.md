@@ -137,7 +137,7 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 **Linux**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash 
+curl -fsSL https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash 
 ```
 
 > **Note for Linux users:** The script attempts to find your Cursor installation by checking common paths (`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`), using the `which cursor` command, and searching within `/usr`, `/opt`, and `$HOME/.local`. If Cursor is installed elsewhere or not found via these methods, the script may fail. Ensure Cursor is accessible via one of these standard locations or methods.
@@ -145,7 +145,7 @@ curl -fsSL https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/ref
 **Windows**
 
 ```powershell
-irm https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
+irm https://raw.githubusercontent.com/haoze-evolluling/go-cursor-help/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
 </details>
