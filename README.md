@@ -1,4 +1,4 @@
-# 🚀 Cursor Free Trial Reset Tool
+# 🚀 Cursor 免费试用重置工具
 
 <div align="center">
 
@@ -10,126 +10,69 @@
 
 <img src="https://ai-cursor.com/wp-content/uploads/2024/09/logo-cursor-ai-png.webp" alt="Cursor Logo" width="120"/>
 
-<!-- Sponsor Ad - Expires: 2025-06-29 -->
+<!-- 赞助商广告 - 过期时间: 2025-06-29 -->
 <div style="margin: 15px 0; padding: 8px 15px; background: #f8f9fa; border-radius: 20px; border: 1px solid #e9ecef;">
-<span style="color: #6c757d; font-size: 12px; margin-right: 10px;">🎯 Sponsored</span>
+<span style="color: #6c757d; font-size: 12px; margin-right: 10px;">🎯 由<a href="https://www.twillot.com/?utm_source=go-cursor-help" target="_blank" style="text-decoration: none; color: #495057; font-size: 14px;">Twillot</a>提供赞助</span>
 <a href="https://www.twillot.com/?utm_source=go-cursor-help" target="_blank" style="text-decoration: none; color: #495057; font-size: 14px;">
-<img src="img/zanzhu/twillot.png" alt="Twillot" width="20" style="vertical-align: middle; margin-right: 8px;"/> Never Lose a Tweet, Always Stay Organized
+<img src="img/zanzhu/twillot.png" alt="Twillot" width="20" style="vertical-align: middle; margin-right: 8px;"/> 永不丢失推文，始终井井有条
 </a>
 </div>
 
 </div>
 
-> ⚠️ **IMPORTANT NOTICE**
+> ⚠️ **重要提示**
 > 
-> This tool currently supports:
-> - ✅ Windows: Latest 1.0.x versions (Supported)
-> - ✅ Mac/Linux: Latest 1.0.x versions (Supported, feedback welcome)
->
-> Please check your Cursor version before using this tool.
+> 本工具当前支持版本：
+> - ✅ Windows: 最新的 1.0.x 版本（已支持）
+> - ✅ Mac/Linux: 最新的 1.0.x 版本（已支持，欢迎测试并反馈问题）
+ 
+> 使用前请确认您的 Cursor 版本。
 
 <details open>
-<summary><b>📦 Version History & Downloads</b></summary>
+<summary><b>📦 版本历史与下载</b></summary>
 
 <div class="version-card" style="background: linear-gradient(135deg, #6e8efb, #a777e3); border-radius: 8px; padding: 15px; margin: 10px 0; color: white;">
 
-### 🌟 Latest Versions
 
-[View Full Version History]([CursorHistoryDown.md](https://github.com/oslook/cursor-ai-downloads?tab=readme-ov-file))
+[查看完整版本历史]([CursorHistoryDown.md](https://github.com/oslook/cursor-ai-downloads?tab=readme-ov-file))
 
 </div>
 
 
-
 </details>
 
-⚠️ **General Solutions for Cursor**
-> 1.  Close Cursor, log out of your account, and delete your account in the official website Settings (refresh IP node: Japan, Singapore, USA, Hong Kong, prioritizing low latency - not necessarily required but change if conditions allow; Windows users are recommended to refresh DNS cache: `ipconfig /flushdns`)
-> Go to the Cursor official website to delete your current account
-> Steps: User avatar -> Setting -> Advanced▼ in the bottom left -> Delete Account
+⚠️ **Cursor通用解决方案**
+> 1.  关闭Cursor、退出账号、官网Setting删除账号(刷新节点IP：日本、新加坡、 美国、香港，低延迟为主不一定需要但是有条件就换，Windows用户建议刷新DNS缓存：`ipconfig /flushdns`)
+> 前往Cursor官网删除当前账号
+> 步骤：用户头像->Setting-左下角Advanced▼->Delete Account
 >
-> 2.  Run the machine code refresh script, see the script address below, available in China
+> 2.  刷新机器码脚本，看下面脚本地址，国内可用
 > 
-> 3.  Re-register an account, log in, and open Cursor to resume normal use.
+> 3.  重新注册账号、登录、打开Cursor，即可恢复正常使用。
 >
-> 4.  Alternative solution: If still unusable after step [**3**], or if you encounter problems such as account registration failure or inability to delete an account, this usually means your browser has been identified or restricted by the target website (risk control). In this case, try switching browsers, such as: Edge, Google Chrome, Firefox. (Or, consider using a browser that can modify or randomize browser fingerprint information).
+> 4.  备用方案：如果步骤 [**3**] 后仍不可用，或者遇到注册账号失败、无法删除账号等问题，这通常意味着您的浏览器被目标网站识别或限制（风控）。此时，请尝试更换浏览器，例如：Edge、Google Chrome、Firefox。（或者，可以尝试使用能够修改或随机化浏览器指纹信息的浏览器）。
+
+
+关注大佬公众号：煎饼果子卷AI
 
 
 ---
 
-⚠️ **MAC Address Modification Warning**
+> ⚠️ **MAC地址修改警告**
 > 
-> For Mac users: This script includes a MAC address modification feature that will:
-> - Modify your network interface's MAC address
-> - Backup original MAC addresses before modification
-> - This modification may temporarily affect network connectivity
-> - You can skip this step when prompted during execution
->
-
-<details >
-<summary><b>🔒 Disable Auto-Update Feature</b></summary>
-
-> To prevent Cursor from automatically updating to unsupported new versions, you can choose to disable the auto-update feature.
-
-#### Method 1: Using Built-in Script (Recommended)
-
-When running the reset tool, the script will ask if you want to disable auto-updates:
-```text
-[Question] Do you want to disable Cursor auto-update feature?
-0) No - Keep default settings (Press Enter)
-1) Yes - Disable auto-update
-```
-
-Select `1` to automatically complete the disable operation.
-
-#### Method 2: Manual Disable
-
-**Windows:**
-1. Close all Cursor processes
-2. Delete directory: `%LOCALAPPDATA%\cursor-updater`
-3. Create a file with the same name (without extension) in the same location
-
-**macOS:**
-```bash
-# NOTE: As tested, this method only works for version 0.45.11 and below.
-# Close Cursor
-pkill -f "Cursor"
-# Replacing app-update.yml with a blank/read-only file
-cd /Applications/Cursor.app/Contents/Resources
-mv app-update.yml app-update.yml.bak
-touch app-update.yml
-chmod 444 app-update.yml
-
-# Go to Settings -> Application -> Update, set Mode to none.
-# This must be done to prevent Cursor from checking for updates.
-
-# NOTE: The cursor-updater modification method may no longer be effective
-# In any case, remove update directory and create blocking file
-rm -rf ~/Library/Application\ Support/Caches/cursor-updater
-touch ~/Library/Application\ Support/Caches/cursor-updater
-```
-
-**Linux:**
-```bash
-# Close Cursor
-pkill -f "Cursor"
-# Remove update directory and create blocking file
-rm -rf ~/.config/cursor-updater
-touch ~/.config/cursor-updater
-```
-
-> ⚠️ **Note:** After disabling auto-updates, you'll need to manually download and install new versions. It's recommended to update only after confirming the new version is compatible.
-
-
-</details>
+> Mac用户请注意: 本脚本包含MAC地址修改功能，将会:
+> - 修改您的网络接口MAC地址
+> - 在修改前备份原始MAC地址
+> - 此修改可能会暂时影响网络连接
+> - 执行过程中可以选择跳过此步骤
 
 ---
 
-### 📝 Description
+### 📝 问题描述
 
-> When you encounter any of these messages:
+> 当您遇到以下任何消息时：
 
-#### Issue 1: Trial Account Limit <p align="right"><a href="#issue1"><img src="https://img.shields.io/badge/Move%20to%20Solution-Blue?style=plastic" alt="Back To Top"></a></p>
+#### 问题 1: 试用账号限制 <p align="right"><a href="#solution1"><img src="https://img.shields.io/badge/跳转到解决方案-Blue?style=plastic" alt="跳转到顶部"></a></p>
 
 ```text
 Too many free trial accounts used on this machine.
@@ -138,7 +81,7 @@ to prevent abuse. Please let us know if you believe
 this is a mistake.
 ```
 
-#### Issue 2: API Key Limitation <p align="right"><a href="#issue2"><img src="https://img.shields.io/badge/Move%20to%20Solution-green?style=plastic" alt="Back To Top"></a></p>
+#### 问题 2: API密钥限制 <p align="right"><a href="#solution2"><img src="https://img.shields.io/badge/跳转到解决方案-green?style=plastic" alt="跳转到顶部"></a></p>
 
 ```text
 [New Issue]
@@ -148,15 +91,15 @@ Please disable API keys and use a Pro or Business subscription.
 Request ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-#### Issue 3: Trial Request Limit
+#### 问题 3: 试用请求限制
 
-> This indicates you've reached the usage limit during the VIP free trial period:
+> 这表明您在VIP免费试用期间已达到使用限制：
 
 ```text
 You've reached your trial request limit.
 ```
 
-#### Issue 4: Claude 3.7 High Load <p align="right"><a href="#issue4"><img src="https://img.shields.io/badge/Move%20to%20Solution-purple?style=plastic" alt="Back To Top"></a></p>
+#### 问题 4: Claude 3.7 高负载 （High Load）  <p align="right"><a href="#solution4"><img src="https://img.shields.io/badge/跳转到解决方案-purple?style=plastic" alt="跳转到顶部"></a></p>
 
 ```text
 High Load 
@@ -166,54 +109,56 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 
 <br>
 
-<p id="issue2"></p>
+<p id="solution2"></p>
 
-#### Solution : Uninstall Cursor Completely And Reinstall (API key Issue)
+#### 解决方案：完全卸载Cursor并重新安装（API密钥问题）
 
-1. Download [Geek.exe Uninstaller[Free]](https://geekuninstaller.com/download)
-2. Uninstall Cursor app completely
-3. Re-Install Cursor app
-4. Continue to Solution 1
+1. 下载 [Geek.exe 卸载工具[免费]](https://geekuninstaller.com/download)
+2. 完全卸载Cursor应用
+3. 重新安装Cursor应用
+4. 继续执行解决方案1
 
 <br>
 
-<p id="issue1"></p>
+<p id="solution1"></p>
 
-> Temporary Solution:
+> 临时解决方案：
 
-#### Solution 1: Quick Reset (Recommended)
+#### 解决方案 1: 快速重置（推荐）
 
-1. Close Cursor application
-2. Run the machine code reset script (see installation instructions below)
-3. Reopen Cursor to continue using
+1. 关闭Cursor应用
+2. 运行机器码重置脚本（见下方安装说明）
+3. 重新打开Cursor继续使用
 
-#### Solution 2: Account Switch
+#### 解决方案 2: 切换账号
 
-1. File -> Cursor Settings -> Sign Out
-2. Close Cursor
-3. Run the machine code reset script
-4. Login with a new account
+1. 文件 -> Cursor设置 -> 退出登录
+2. 关闭Cursor
+3. 运行机器码重置脚本
+4. 使用新账号登录
 
-#### Solution 3: Network Optimization
+#### 解决方案 3: 网络优化
 
-If the above solutions don't work, try:
+如果上述解决方案不起作用，请尝试：
 
-- Switch to low-latency nodes (Recommended regions: Japan, Singapore, US, Hong Kong)
-- Ensure network stability
-- Clear browser cache and retry
+- 切换到低延迟节点（推荐区域：日本、新加坡、美国、香港）
+- 确保网络稳定性
+- 清除浏览器缓存并重试
 
-#### Solution 4: Claude 3.7 Access Issue (High Load)
+<p id="solution4"></p>
 
-If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor is limiting free trial accounts from using the 3.7 model during certain times of the day. Try:
+#### 解决方案 4: Claude 3.7 访问问题（High Load ）
 
-1. Switch to a new account created with Gmail, possibly connecting through a different IP address
-2. Try accessing during off-peak hours (typically 5-10 AM or 3-7 PM when restrictions are often lighter)
-3. Consider upgrading to Pro for guaranteed access
-4. Use Claude 3.5 Sonnet as a fallback option
+如果您看到Claude 3.7 Sonnet的"High Load"（高负载）消息，这表明Cursor在一天中某些时段限制免费试用账号使用3.7模型。请尝试：
 
-> Note: These access patterns may change as Cursor adjusts their resource allocation policies.
+1. 使用Gmail邮箱创建新账号，可能需要通过不同IP地址连接
+2. 尝试在非高峰时段访问（通常在早上5-10点或下午3-7点之间限制较少）
+3. 考虑升级到Pro版本获取保证访问权限
+4. 使用Claude 3.5 Sonnet作为备选方案
 
-### 💻 System Support
+> 注意：随着Cursor调整资源分配策略，这些访问模式可能会发生变化。
+
+### 🚀 系统支持
 
 <table>
 <tr>
@@ -221,25 +166,21 @@ If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor 
 
 **Windows** ✅
 
-- x64 (64-bit)
-- x86 (32-bit)
+- x64 & x86
 
 </td>
 <td>
 
 **macOS** ✅
 
-- Intel (x64)
-- Apple Silicon (M1/M2)
+- Intel & M-series
 
 </td>
 <td>
 
 **Linux** ✅
 
-- x64 (64-bit)
-- x86 (32-bit)
-- ARM64
+- x64 & ARM64
 
 </td>
 </tr>
@@ -247,40 +188,10 @@ If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor 
 
 
 
-### 🚀 One-Click Solution
+### 🚀 一键解决方案
 
 <details open>
-<summary><b>Global Users</b></summary>
-
-**macOS**
-
-```bash
-# Method two
-curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_mac_id_modifier.sh -o ./cursor_mac_id_modifier.sh && sudo bash ./cursor_mac_id_modifier.sh && rm ./cursor_mac_id_modifier.sh
-```
-
-**Linux**
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash 
-```
-
-> **Note for Linux users:** The script attempts to find your Cursor installation by checking common paths (`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`), using the `which cursor` command, and searching within `/usr`, `/opt`, and `$HOME/.local`. If Cursor is installed elsewhere or not found via these methods, the script may fail. Ensure Cursor is accessible via one of these standard locations or methods.
-
-**Windows**
-
-```powershell
-irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
-```
-
-<div align="center">
-<img src="img/run_success.png" alt="Run Success" width="600"/>
-</div>
-
-</details>
-
-<details open>
-<summary><b>China Users (Recommended)</b></summary>
+<summary><b>国内用户（推荐）</b></summary>
 
 **macOS**
 
@@ -294,130 +205,168 @@ curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com
 curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash
 ```
 
+> **Linux 用户请注意：** 该脚本通过检查常用路径（`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`）、使用 `which cursor` 命令以及在 `/usr`、`/opt` 和 `$HOME/.local` 目录内搜索，来尝试定位您的 Cursor 安装。如果 Cursor 安装在其他位置或通过这些方法无法找到，脚本可能会失败。请确保可以通过这些标准位置或方法之一访问到 Cursor。
+
 **Windows**
 
 ```powershell
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
+<div align="center">
+<img src="img/run_success.png" alt="运行成功" width="600"/>
+</div>
 
 </details>
-
 <details open>
-<summary><b>Windows Terminal Run and Configuration</b></summary>
+<summary><b>Windows 管理员终端运行和手动安装</b></summary>
 
-#### How to Open Administrator Terminal in Windows:
+#### Windows 系统打开管理员终端的方法：
 
-##### Method 1: Using Win + X Shortcut
+##### 方法一：使用 Win + X 快捷键
 ```md
-1. Press Win + X key combination
-2. Select one of these options from the menu:
-   - "Windows PowerShell (Administrator)"
-   - "Windows Terminal (Administrator)"
-   - "Terminal (Administrator)"
-   (Options may vary depending on Windows version)
+1. 按下 Win + X 组合键
+2. 在弹出的菜单中选择以下任一选项:
+   - "Windows PowerShell (管理员)"
+   - "Windows Terminal (管理员)" 
+   - "终端(管理员)"
+   (具体选项因Windows版本而异)
 ```
 
-##### Method 2: Using Win + R Run Command
+##### 方法二：使用 Win + R 运行命令
 ```md
-1. Press Win + R key combination
-2. Type powershell or pwsh in the Run dialog
-3. Press Ctrl + Shift + Enter to run as administrator
-   or type in the opened window: Start-Process pwsh -Verb RunAs
-4. Enter the reset script in the administrator terminal:
+1. 按下 Win + R 组合键
+2. 在运行框中输入 powershell 或 pwsh
+3. 按 Ctrl + Shift + Enter 以管理员身份运行
+   或在打开的窗口中输入: Start-Process pwsh -Verb RunAs
+4. 在管理员终端中输入以下重置脚本:
 
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
-##### Method 3: Using Search
->![Search PowerShell](img/pwsh_1.png)
+##### 方法三：通过搜索启动
+>![搜索 PowerShell](img/pwsh_1.png)
 >
->Type pwsh in the search box, right-click and select "Run as administrator"
->![Run as Administrator](img/pwsh_2.png)
+>在搜索框中输入 pwsh，右键选择"以管理员身份运行"
+>![管理员运行](img/pwsh_2.png)
 
-Enter the reset script in the administrator terminal:
+在管理员终端中输入重置脚本:
 ```powershell
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
-### 🔧 PowerShell Installation Guide 
+### 🔧 PowerShell 安装指南
 
-If PowerShell is not installed on your system, you can install it using one of these methods:
+如果您的系统没有安装 PowerShell,可以通过以下方法安装:
 
-#### Method 1: Install via Winget (Recommended)
+#### 方法一：使用 Winget 安装（推荐）
 
-1. Open Command Prompt or PowerShell
-2. Run the following command:
+1. 打开命令提示符或 PowerShell
+2. 运行以下命令:
 ```powershell
 winget install --id Microsoft.PowerShell --source winget
 ```
 
-#### Method 2: Manual Installation
+#### 方法二：手动下载安装
 
-1. Download the installer for your system:
-   - [PowerShell-7.4.6-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi) (64-bit systems)
-   - [PowerShell-7.4.6-win-x86.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi) (32-bit systems)
-   - [PowerShell-7.4.6-win-arm64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-arm64.msi) (ARM64 systems)
+1. 下载对应系统的安装包:
+   - [PowerShell-7.4.6-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi) (64位系统)
+   - [PowerShell-7.4.6-win-x86.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi) (32位系统)
+   - [PowerShell-7.4.6-win-arm64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-arm64.msi) (ARM64系统)
 
-2. Double-click the downloaded installer and follow the installation prompts
+2. 双击下载的安装包,按提示完成安装
 
-> 💡 If you encounter any issues, please refer to the [Microsoft Official Installation Guide](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
+> 💡 如果仍然遇到问题,可以参考 [Microsoft 官方安装指南](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows)
 
 </details>
 
 #### Windows 安装特性:
 
-- 🔍 Automatically detects and uses PowerShell 7 if available
-- 🛡️ Requests administrator privileges via UAC prompt
-- 📝 Falls back to Windows PowerShell if PS7 isn't found
-- 💡 Provides manual instructions if elevation fails
+- 🔍 自动检测并使用 PowerShell 7（如果可用）
+- 🛡️ 通过 UAC 提示请求管理员权限
+- 📝 如果没有 PS7 则使用 Windows PowerShell
+- 💡 如果提权失败会提供手动说明
 
-That's it! The script will:
+完成后，脚本将：
 
-1. ✨ Install the tool automatically
-2. 🔄 Reset your Cursor trial immediately
+1. ✨ 自动安装工具
+2. 🔄 立即重置 Cursor 试用期
 
-### 📦 Manual Installation
+### 📦 手动安装
 
-> Download the appropriate file for your system from [releases](https://github.com/yuaotian/go-cursor-help/releases/latest)
+> 从 [releases](https://github.com/yuaotian/go-cursor-help/releases/latest) 下载适合您系统的文件
 
 <details>
-<summary>Windows Packages</summary>
+<summary>Windows 安装包</summary>
 
-- 64-bit: `cursor-id-modifier_windows_x64.exe`
-- 32-bit: `cursor-id-modifier_windows_x86.exe`
+- 64 位: `cursor-id-modifier_windows_x64.exe`
+- 32 位: `cursor-id-modifier_windows_x86.exe`
 </details>
 
 <details>
-<summary>macOS Packages</summary>
+<summary>macOS 安装包</summary>
 
 - Intel: `cursor-id-modifier_darwin_x64_intel`
 - M1/M2: `cursor-id-modifier_darwin_arm64_apple_silicon`
 </details>
 
 <details>
-<summary>Linux Packages</summary>
+<summary>Linux 安装包</summary>
 
-- 64-bit: `cursor-id-modifier_linux_x64`
-- 32-bit: `cursor-id-modifier_linux_x86`
+- 64 位: `cursor-id-modifier_linux_x64`
+- 32 位: `cursor-id-modifier_linux_x86`
 - ARM64: `cursor-id-modifier_linux_arm64`
 </details>
 
-### 🔧 Technical Details
+### 🔧 技术细节
 
 <details>
-<summary><b>Configuration Files</b></summary>
+<summary><b>注册表修改说明</b></summary>
 
-The program modifies Cursor's `storage.json` config file located at:
+> ⚠️ **重要提示：本工具会修改系统注册表**
 
-- Windows: `%APPDATA%\Cursor\User\globalStorage\storage.json`
-- macOS: `~/Library/Application Support/Cursor/User/globalStorage/storage.json`
-- Linux: `~/.config/Cursor/User/globalStorage/storage.json`
+#### 修改内容
+- 路径：`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
+- 项目：`MachineGuid`
+
+#### 潜在影响
+修改此注册表项可能会影响：
+- Windows 系统对设备的唯一标识
+- 某些软件的设备识别和授权状态
+- 基于硬件标识的系统功能
+
+#### 安全措施
+1. 自动备份
+   - 每次修改前会自动备份原始值
+   - 备份保存在：`%APPDATA%\Cursor\User\globalStorage\backups`
+   - 备份文件格式：`MachineGuid.backup_YYYYMMDD_HHMMSS`
+
+2. 手动恢复方法
+   - 打开注册表编辑器（regedit）
+   - 定位到：`计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
+   - 右键点击 `MachineGuid`
+   - 选择"修改"
+   - 粘贴备份文件中的值
+
+#### 注意事项
+- 建议在修改前先确认备份文件的存在
+- 如遇问题可通过备份文件恢复原始值
+- 必须以管理员权限运行才能修改注册表
 </details>
 
 <details>
-<summary><b>Modified Fields</b></summary>
+<summary><b>配置文件</b></summary>
 
-The tool generates new unique identifiers for:
+程序修改 Cursor 的`storage.json`配置文件，位于：
+
+- Windows: `%APPDATA%\Cursor\User\globalStorage\`
+- macOS: `~/Library/Application Support/Cursor/User/globalStorage/`
+- Linux: `~/.config/Cursor/User/globalStorage/`
+</details>
+
+<details>
+<summary><b>修改字段</b></summary>
+
+工具会生成新的唯一标识符：
 
 - `telemetry.machineId`
 - `telemetry.macMachineId`
@@ -426,76 +375,91 @@ The tool generates new unique identifiers for:
 </details>
 
 <details>
-<summary><b>Manual Auto-Update Disable</b></summary>
+<summary><b>手动禁用自动更新</b></summary>
 
-Windows users can manually disable the auto-update feature:
+Windows 用户可以手动禁用自动更新功能：
 
-1. Close all Cursor processes
-2. Delete directory: `C:\Users\username\AppData\Local\cursor-updater`
-3. Create a file with the same name: `cursor-updater` (without extension)
+1. 关闭所有 Cursor 进程
+2. 删除目录：`C:\Users\用户名\AppData\Local\cursor-updater`
+3. 创建同名文件：`cursor-updater`（不带扩展名）
 
-macOS/Linux users can try to locate similar `cursor-updater` directory in their system and perform the same operation.
+Linux用户可以尝试在系统中找到类似的`cursor-updater`目录进行相同操作。
 
+MacOS用户按照以下步骤操作：
+
+```bash
+# 注意：经测试，此方法仅适用于0.45.11及以下版本，不支持0.46.*版本
+# 关闭所有 Cursor 进程
+pkill -f "Cursor"
+
+# 备份app-update.yml并创建空的只读文件代替原文件
+cd /Applications/Cursor.app/Contents/Resources
+mv app-update.yml app-update.yml.bak
+touch app-update.yml
+chmod 444 app-update.yml
+
+# 打开Cursor设置，将更新模式设置为"无"，该步骤必须执行，否则Cursor依然会自动检查更新
+# 步骤：Settings -> Application -> Update, 将Mode设置为none
+
+# 注意: cursor-updater修改方法可能已失效。但为了以防万一，还是删除更新目录并创建阻止文件
+rm -rf ~/Library/Application\ Support/Caches/cursor-updater
+touch ~/Library/Application\ Support/Caches/cursor-updater
+```
 </details>
 
 <details>
-<summary><b>Safety Features</b></summary>
+<summary><b>安全特性</b></summary>
 
-- ✅ Safe process termination
-- ✅ Atomic file operations
-- ✅ Error handling and recovery
+- ✅ 安全的进程终止
+- ✅ 原子文件操作
+- ✅ 错误处理和恢复
 </details>
 
 <details>
-<summary><b>Registry Modification Notice</b></summary>
+<summary><b>重置 Cursor 免费试用</b></summary>
 
-> ⚠️ **Important: This tool modifies the Windows Registry**
+### 使用 `cursor_free_trial_reset.sh` 脚本
 
-#### Modified Registry
-- Path: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-- Key: `MachineGuid`
+#### macOS
 
-#### Potential Impact
-Modifying this registry key may affect:
-- Windows system's unique device identification
-- Device recognition and authorization status of certain software
-- System features based on hardware identification
+```bash
+curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh -o ./cursor_free_trial_reset.sh && sudo bash ./cursor_free_trial_reset.sh && rm ./cursor_free_trial_reset.sh
+```
 
-#### Safety Measures
-1. Automatic Backup
-   - Original value is automatically backed up before modification
-   - Backup location: `%APPDATA%\Cursor\User\globalStorage\backups`
-   - Backup file format: `MachineGuid.backup_YYYYMMDD_HHMMSS`
+#### Linux
 
-2. Manual Recovery Steps
-   - Open Registry Editor (regedit)
-   - Navigate to: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-   - Right-click on `MachineGuid`
-   - Select "Modify"
-   - Paste the value from backup file
+```bash
+curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh | sudo bash
+```
 
-#### Important Notes
-- Verify backup file existence before modification
-- Use backup file to restore original value if needed
-- Administrator privileges required for registry modification
+#### Windows
+
+```powershell
+irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_free_trial_reset.sh | iex
+```
+
 </details>
 
----
-
-### 📚 Recommended Reading
-
-- [Cursor Issues Collection and Solutions](https://mp.weixin.qq.com/s/pnJrH7Ifx4WZvseeP1fcEA)
-- [AI Universal Development Assistant Prompt Guide](https://mp.weixin.qq.com/s/PRPz-qVkFJSgkuEKkTdzwg)
-
----
-
-##  Support
+## 联系方式
 
 <div align="center">
-<b>If you find this helpful, consider buying me a spicy gluten snack (Latiao) as appreciation~ 💁☕️</b>
 <table>
 <tr>
-
+<td align="center">
+<b>个人微信</b><br>
+<img src="img/wx_me.png" width="250" alt="作者微信"><br>
+<b>微信：JavaRookie666</b>
+</td>
+<td align="center">
+<b>微信交流群</b><br>
+<img src="img/qun-14.jpg" width="500" alt="WeChat"><br>
+<small>二维码7天内(6月18日前)有效，过期请加微信</small>
+</td>
+<td align="center">
+<b>公众号</b><br>
+<img src="img/wx_public_2.png" width="250" alt="微信公众号"><br>
+<small>获取更多AI开发资源</small>
+</td>
 <td align="center">
 <b>微信赞赏</b><br>
 <img src="img/wx_zsm2.png" width="500" alt="微信赞赏码"><br>
@@ -506,30 +470,20 @@ Modifying this registry key may affect:
 <img src="img/alipay.png" width="500" alt="支付宝赞赏码"><br>
 <small>如果觉得有帮助,来包辣条犒劳一下吧~</small>
 </td>
-<td align="center">
-<b>Alipay</b><br>
-<img src="img/alipay_scan_pay.jpg" width="500" alt="Alipay"><br>
-<em>1 Latiao = 1 AI thought cycle</em>
-</td>
-<td align="center">
-<b>WeChat</b><br>
-<img src="img/qun-14.jpg" width="500" alt="WeChat"><br>
-<em>二维码7天内(6月18日前)有效，过期请加微信</em>
-</td>
-<!-- <td align="center">
-<b>ETC</b><br>
-<img src="img/etc.png" width="100" alt="ETC Address"><br>
-ETC: 0xa2745f4CD5d32310AC01694ABDB28bA32D125a6b
-</td>
-<td align="center"> -->
-</td>
 </tr>
 </table>
 </div>
 
 ---
 
-## ⭐ Project Stats
+### 📚 推荐阅读
+
+- [Cursor 异常问题收集和解决方案](https://mp.weixin.qq.com/s/pnJrH7Ifx4WZvseeP1fcEA)
+- [AI 通用开发助手提示词指南](https://mp.weixin.qq.com/s/PRPz-qVkFJSgkuEKkTdzwg)
+
+---
+
+## ⭐ 项目统计
 
 <div align="center">
 
@@ -539,10 +493,10 @@ ETC: 0xa2745f4CD5d32310AC01694ABDB28bA32D125a6b
 
 </div>
 
-## 📄 License
+## 📄 许可证
 
 <details>
-<summary><b>MIT License</b></summary>
+<summary><b>MIT 许可证</b></summary>
 
 Copyright (c) 2024
 
@@ -557,4 +511,3 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 </details>
-
