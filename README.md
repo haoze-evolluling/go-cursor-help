@@ -1,23 +1,7 @@
 # 🚀 Cursor 免费试用重置工具
 
 <div align="center">
-
-[![Release](https://img.shields.io/github/v/release/yuaotian/go-cursor-help?style=flat-square&logo=github&color=blue)](https://github.com/yuaotian/go-cursor-help/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=bookstack)](https://github.com/yuaotian/go-cursor-help/blob/master/LICENSE)
-[![Stars](https://img.shields.io/github/stars/yuaotian/go-cursor-help?style=flat-square&logo=github)](https://github.com/yuaotian/go-cursor-help/stargazers)
-
-[🌟 English](README.md) | [🌏 中文](README_CN.md) | [🌏 日本語](README_JP.md)
-
 <img src="https://ai-cursor.com/wp-content/uploads/2024/09/logo-cursor-ai-png.webp" alt="Cursor Logo" width="120"/>
-
-<!-- 赞助商广告 - 过期时间: 2025-06-29 -->
-<div style="margin: 15px 0; padding: 8px 15px; background: #f8f9fa; border-radius: 20px; border: 1px solid #e9ecef;">
-<span style="color: #6c757d; font-size: 12px; margin-right: 10px;">🎯 由<a href="https://www.twillot.com/?utm_source=go-cursor-help" target="_blank" style="text-decoration: none; color: #495057; font-size: 14px;">Twillot</a>提供赞助</span>
-<a href="https://www.twillot.com/?utm_source=go-cursor-help" target="_blank" style="text-decoration: none; color: #495057; font-size: 14px;">
-<img src="img/zanzhu/twillot.png" alt="Twillot" width="20" style="vertical-align: middle; margin-right: 8px;"/> 永不丢失推文，始终井井有条
-</a>
-</div>
-
 </div>
 
 > ⚠️ **重要提示**
@@ -28,18 +12,6 @@
  
 > 使用前请确认您的 Cursor 版本。
 
-<details open>
-<summary><b>📦 版本历史与下载</b></summary>
-
-<div class="version-card" style="background: linear-gradient(135deg, #6e8efb, #a777e3); border-radius: 8px; padding: 15px; margin: 10px 0; color: white;">
-
-
-[查看完整版本历史]([CursorHistoryDown.md](https://github.com/oslook/cursor-ai-downloads?tab=readme-ov-file))
-
-</div>
-
-
-</details>
 
 ⚠️ **Cursor通用解决方案**
 > 1.  关闭Cursor、退出账号、官网Setting删除账号(刷新节点IP：日本、新加坡、 美国、香港，低延迟为主不一定需要但是有条件就换，Windows用户建议刷新DNS缓存：`ipconfig /flushdns`)
@@ -51,9 +23,6 @@
 > 3.  重新注册账号、登录、打开Cursor，即可恢复正常使用。
 >
 > 4.  备用方案：如果步骤 [**3**] 后仍不可用，或者遇到注册账号失败、无法删除账号等问题，这通常意味着您的浏览器被目标网站识别或限制（风控）。此时，请尝试更换浏览器，例如：Edge、Google Chrome、Firefox。（或者，可以尝试使用能够修改或随机化浏览器指纹信息的浏览器）。
-
-
-关注大佬公众号：煎饼果子卷AI
 
 
 ---
@@ -190,94 +159,9 @@ We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade t
 
 ### 🚀 一键解决方案
 
-<details open>
-<summary><b>国内用户（推荐）</b></summary>
 
-**macOS**
 
-```bash
-curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_mac_id_modifier.sh -o ./cursor_mac_id_modifier.sh && sudo bash ./cursor_mac_id_modifier.sh && rm ./cursor_mac_id_modifier.sh
-```
 
-**Linux**
-
-```bash
-curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash
-```
-
-> **Linux 用户请注意：** 该脚本通过检查常用路径（`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`）、使用 `which cursor` 命令以及在 `/usr`、`/opt` 和 `$HOME/.local` 目录内搜索，来尝试定位您的 Cursor 安装。如果 Cursor 安装在其他位置或通过这些方法无法找到，脚本可能会失败。请确保可以通过这些标准位置或方法之一访问到 Cursor。
-
-**Windows**
-
-```powershell
-irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
-```
-<div align="center">
-<img src="img/run_success.png" alt="运行成功" width="600"/>
-</div>
-
-</details>
-<details open>
-<summary><b>Windows 管理员终端运行和手动安装</b></summary>
-
-#### Windows 系统打开管理员终端的方法：
-
-##### 方法一：使用 Win + X 快捷键
-```md
-1. 按下 Win + X 组合键
-2. 在弹出的菜单中选择以下任一选项:
-   - "Windows PowerShell (管理员)"
-   - "Windows Terminal (管理员)" 
-   - "终端(管理员)"
-   (具体选项因Windows版本而异)
-```
-
-##### 方法二：使用 Win + R 运行命令
-```md
-1. 按下 Win + R 组合键
-2. 在运行框中输入 powershell 或 pwsh
-3. 按 Ctrl + Shift + Enter 以管理员身份运行
-   或在打开的窗口中输入: Start-Process pwsh -Verb RunAs
-4. 在管理员终端中输入以下重置脚本:
-
-irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
-```
-
-##### 方法三：通过搜索启动
->![搜索 PowerShell](img/pwsh_1.png)
->
->在搜索框中输入 pwsh，右键选择"以管理员身份运行"
->![管理员运行](img/pwsh_2.png)
-
-在管理员终端中输入重置脚本:
-```powershell
-irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
-```
-
-### 🔧 PowerShell 安装指南
-
-如果您的系统没有安装 PowerShell,可以通过以下方法安装:
-
-#### 方法一：使用 Winget 安装（推荐）
-
-1. 打开命令提示符或 PowerShell
-2. 运行以下命令:
-```powershell
-winget install --id Microsoft.PowerShell --source winget
-```
-
-#### 方法二：手动下载安装
-
-1. 下载对应系统的安装包:
-   - [PowerShell-7.4.6-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi) (64位系统)
-   - [PowerShell-7.4.6-win-x86.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi) (32位系统)
-   - [PowerShell-7.4.6-win-arm64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-arm64.msi) (ARM64系统)
-
-2. 双击下载的安装包,按提示完成安装
-
-> 💡 如果仍然遇到问题,可以参考 [Microsoft 官方安装指南](https://learn.microsoft.com/zh-cn/powershell/scripting/install/installing-powershell-on-windows)
-
-</details>
 
 #### Windows 安装特性:
 
@@ -440,41 +324,6 @@ irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/
 
 </details>
 
-## 联系方式
-
-<div align="center">
-<table>
-<tr>
-<td align="center">
-<b>个人微信</b><br>
-<img src="img/wx_me.png" width="250" alt="作者微信"><br>
-<b>微信：JavaRookie666</b>
-</td>
-<td align="center">
-<b>微信交流群</b><br>
-<img src="img/qun-14.jpg" width="500" alt="WeChat"><br>
-<small>二维码7天内(6月18日前)有效，过期请加微信</small>
-</td>
-<td align="center">
-<b>公众号</b><br>
-<img src="img/wx_public_2.png" width="250" alt="微信公众号"><br>
-<small>获取更多AI开发资源</small>
-</td>
-<td align="center">
-<b>微信赞赏</b><br>
-<img src="img/wx_zsm2.png" width="500" alt="微信赞赏码"><br>
-<small>要到饭咧？啊咧？啊咧？不给也没事~ 请随意打赏</small>
-</td>
-<td align="center">
-<b>支付宝赞赏</b><br>
-<img src="img/alipay.png" width="500" alt="支付宝赞赏码"><br>
-<small>如果觉得有帮助,来包辣条犒劳一下吧~</small>
-</td>
-</tr>
-</table>
-</div>
-
----
 
 ### 📚 推荐阅读
 
@@ -483,15 +332,7 @@ irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/
 
 ---
 
-## ⭐ 项目统计
 
-<div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yuaotian/go-cursor-help&type=Date)](https://star-history.com/#yuaotian/go-cursor-help&Date)
-
-![Repobeats analytics image](https://repobeats.axiom.co/api/embed/ddaa9df9a94b0029ec3fad399e1c1c4e75755477.svg "Repobeats analytics image")
-
-</div>
 
 ## 📄 许可证
 
